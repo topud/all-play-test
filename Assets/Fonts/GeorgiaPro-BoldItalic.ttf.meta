@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: ce9d1847b8ad59849bee7125560ba62d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Georgia Pro
+  fontNames:
+  - Georgia Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e1b9b8f0d3bd55a49bcd6ff3a3fe2f64, type: 3}
+  - {fileID: 12800000, guid: ae7682f19da683b4da32e8c68db09550, type: 3}
+  - {fileID: 12800000, guid: d7568232b8641194e8a69977fb203c4d, type: 3}
+  - {fileID: 12800000, guid: 6a9901a2ab67b2141a03fb75e05cea5a, type: 3}
+  - {fileID: 12800000, guid: 737e876497666ae40a5d787111b31577, type: 3}
+  - {fileID: 12800000, guid: ec82b894ec04940448f839149b4bfc21, type: 3}
+  - {fileID: 12800000, guid: 3ae5adf5d7969f048809850906613213, type: 3}
+  - {fileID: 12800000, guid: 43b701f6d852e3648861da6e5124eb51, type: 3}
+  - {fileID: 12800000, guid: 1637ca07f61d30e4d8bab7ae5f41ca28, type: 3}
+  - {fileID: 12800000, guid: acfc8b0708aae4e4e9444913856f237a, type: 3}
+  - {fileID: 12800000, guid: 6410ef472dcc695499530b2967d04234, type: 3}
+  - {fileID: 12800000, guid: 6bc7f26891121c142875b6bb98dbd456, type: 3}
+  - {fileID: 12800000, guid: 67dee529849457b45b7f05b4a74628e8, type: 3}
+  - {fileID: 12800000, guid: 6cc1d8fa8038398489e108dc06952522, type: 3}
+  - {fileID: 12800000, guid: da66de0d35f4a1d46952e4fe8bee4b5b, type: 3}
+  - {fileID: 12800000, guid: 67e2c04d6e124434d901502953895de3, type: 3}
+  - {fileID: 12800000, guid: 32ac1a2ecf3af6f4f84ca3e0c1fb5299, type: 3}
+  - {fileID: 12800000, guid: 5ddaa7ee3ce3f744d9c67e489b45ea36, type: 3}
+  - {fileID: 12800000, guid: 26d869ffe898bbc4db02eba848f3e577, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

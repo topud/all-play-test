@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 98a9be5f058bdcd41beb92e6d913b203
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: EYInterstate
+  fontNames:
+  - EYInterstate
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 31da38801dd3cbc46a82c224878bd7e2, type: 3}
+  - {fileID: 12800000, guid: 61346b1e952399a43ba4f12ec088ce87, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -50,7 +50,7 @@ MonoBehaviour:
     Graph: {fileID: 11400000, guid: cf467607172571a49a1c3a724574362c, type: 2}
     SubGraphNode: {fileID: 0}
     Zoom: 1.6
-    PanOffset: {x: 456.27872, y: 578.0006}
+    PanOffset: {x: 355.27872, y: 391.0006}
     SelectedNodes: []
     DeletedNodes: []
   CurrentView: 1

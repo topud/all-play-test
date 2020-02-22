@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="PSDDplacemat-2v54" size="0.430000 0.278235" />
+    <ImageTarget name="PSDDplacemat-1v54" size="0.430000 0.278235" />
+    <ImageTarget name="Placemat_B" size="0.430000 0.278210" />
+    <ImageTarget name="Placemat_A" size="0.430000 0.278210" />
+  </Tracking>
+</QCARConfig>

@@ -684,7 +684,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: dUI_MANAGER;dUI_TextMeshPro
     4: dUI_MANAGER;dUI_TextMeshPro
-    7: dUI_MANAGER;dUI_TextMeshPro
+    7: dUI_MANAGER;dUI_TextMeshPro;SUBSTANCE_PLUGIN_ENABLED
     13: dUI_MANAGER;dUI_TextMeshPro
     14: dUI_MANAGER;dUI_TextMeshPro
     19: dUI_MANAGER;dUI_TextMeshPro

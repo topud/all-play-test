@@ -38,6 +38,12 @@ public class DialogueButtons : MonoBehaviour
     }
 
     public void navigateBackward() {
-        diagPointer--;
+        contentSection[diagPointer].gameObject.SetActive(false);
+        if(diagPointer == 0) {
+            diagPointer = contentSection.Count - 1;
+        } else {
+            diagPointer--;
+        }
+        contentSection[diagPointer].gameObject.SetActive(true);
     }
 }

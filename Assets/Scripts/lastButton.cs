@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class lastButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+     public GameObject dialogue;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+     public void last() {
+         dialogue.GetComponent<DialogueButtons>().navigateBackward();
+     }
 }

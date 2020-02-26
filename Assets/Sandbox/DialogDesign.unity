@@ -278,6 +278,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 428267541486225675, guid: 7c77e61a104fb92458aaa12bcb9f6a9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 908104666191907080, guid: 7c77e61a104fb92458aaa12bcb9f6a9b,
         type: 3}
       propertyPath: m_text
@@ -320,6 +325,11 @@ PrefabInstance:
       value: Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3993539206919251515, guid: 7c77e61a104fb92458aaa12bcb9f6a9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286228670996964729, guid: 7c77e61a104fb92458aaa12bcb9f6a9b,
         type: 3}
       propertyPath: m_IsActive
       value: 1

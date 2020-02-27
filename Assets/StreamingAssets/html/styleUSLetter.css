@@ -1,0 +1,28 @@
+@page {
+    size: letter;
+    margin: 0;
+
+}
+
+@media print {
+
+     
+    .page {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+		height:100%;
+		page-break-after: always;
+
+     }
+      
+	.imgPrint {
+		width: 160mm;
+	}
+    
+	html, body {
+        width: 8.5in;
+        height: 11in;
+    }
+}
+

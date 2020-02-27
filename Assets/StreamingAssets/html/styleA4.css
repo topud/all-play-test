@@ -1,0 +1,28 @@
+@page {
+    size: A4 portrait;
+    margin: 0;
+
+}
+
+@media print {
+
+     
+    .page {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+		height:100%;
+		page-break-after: always;
+
+     }
+      
+	.imgPrint {
+		width: 170mm;
+	}
+    
+	html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+}
+

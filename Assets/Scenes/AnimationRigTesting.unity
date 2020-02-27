@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114456, guid: 236a02cec9b164f43b15c3dcc0db0162, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 403578, guid: 236a02cec9b164f43b15c3dcc0db0162, type: 3}
       propertyPath: m_LocalPosition.x
@@ -349,6 +349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504384247240873056, guid: 753c80430b5c343ec8a1b34236ece2be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 753c80430b5c343ec8a1b34236ece2be, type: 3}

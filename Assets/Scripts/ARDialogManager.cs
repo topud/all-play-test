@@ -5,7 +5,7 @@ using UnityEngine;
 public class ARDialogManager : MonoBehaviour
 {
     public Dictionary<string, GameObject> dictDialogs = new Dictionary<string, GameObject>();
-    public string dialogTag = "DialogueText";
+    public string dialogTag = "DialoguePrefab";
     
     private void Start()
     {
@@ -30,7 +30,8 @@ public class ARDialogManager : MonoBehaviour
     public void showDialog(string dialogName)
     {
         hideAllDialogs();
-        dictDialogs[dialogName].SetActive(true);
+        if (dictDialogs.Count > 0)
+            dictDialogs[dialogName].SetActive(true);
     }
 
     //Hides all dialogs shown.

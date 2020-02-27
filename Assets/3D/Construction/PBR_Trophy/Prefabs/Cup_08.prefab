@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 403578}
   - component: {fileID: 3384858}
   - component: {fileID: 2398148}
+  - component: {fileID: 2389040514537578543}
   m_Layer: 0
   m_Name: Cup_08
   m_TagString: Untagged
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2389040514537578543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1939ac8feebaf4719aa38c4180ee6db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireworks: {fileID: 2535449793433426199}
 --- !u!1 &6206794057650278154
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +106,7 @@ GameObject:
   - component: {fileID: 2535449793433426199}
   - component: {fileID: 1088615751427277048}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Rockets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

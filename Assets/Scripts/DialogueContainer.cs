@@ -61,7 +61,7 @@ public class DialogueContainer : MonoBehaviour
         } else {
             diagPointer--;
         }
-        currPage = diagPointer - 1; 
+        currPage = diagPointer + 1; 
         pageNum.text = $"{currPage}/{totalPages}";
         contentSection[diagPointer].gameObject.SetActive(true);
     }

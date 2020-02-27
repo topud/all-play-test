@@ -18,7 +18,7 @@ ModelImporter:
       name: Industrial_030_mat
     second: {fileID: 163662568410821732, guid: e059b90675837c84bbd87fffd6736225, type: 3}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

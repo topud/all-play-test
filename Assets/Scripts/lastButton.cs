@@ -7,6 +7,6 @@ public class lastButton : MonoBehaviour
      public GameObject dialogue;
 
      public void last() {
-         dialogue.GetComponent<DialogueButtons>().navigateBackward();
+         dialogue.GetComponent<DialogueContainer>().navigateBackward();
      }
 }

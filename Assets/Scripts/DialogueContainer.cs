@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueButtons : MonoBehaviour
+public class DialogueContainer : MonoBehaviour
 {
     private int diagPointer = 0; 
     // Start is called before the first frame update
@@ -12,8 +12,10 @@ public class DialogueButtons : MonoBehaviour
         // gather all children of the button's parent i.e. siblings
         Component[] items = gameObject.transform.GetComponentsInChildren<RectTransform>();
 
-        foreach(Component item in items) {     
-            if(item.tag == "DialogueText"){
+        foreach(Component item in items)
+        {     
+            if(item.tag == "DialogueText")
+            {
                 contentSection.Add(item);
                 item.gameObject.SetActive(false);
             }
@@ -27,9 +29,11 @@ public class DialogueButtons : MonoBehaviour
     {
     }
 
-    public void navigateForward() {
+    public void navigateForward()
+    {
         contentSection[diagPointer].gameObject.SetActive(false);
-        if(contentSection.Count - 1 == diagPointer) {
+        if(contentSection.Count - 1 == diagPointer)
+        {
             diagPointer = 0;
         } else {
             diagPointer++;
@@ -37,9 +41,11 @@ public class DialogueButtons : MonoBehaviour
         contentSection[diagPointer].gameObject.SetActive(true);
     }
 
-    public void navigateBackward() {
+    public void navigateBackward()
+    {
         contentSection[diagPointer].gameObject.SetActive(false);
-        if(diagPointer == 0) {
+        if(diagPointer == 0)
+        {
             diagPointer = contentSection.Count - 1;
         } else {
             diagPointer--;

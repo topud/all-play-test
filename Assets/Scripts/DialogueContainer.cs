@@ -5,6 +5,9 @@ using UnityEngine;
 public class DialogueContainer : MonoBehaviour
 {
     private int diagPointer = 0; 
+    private int totalPages;
+    private int currPage;
+    private TMPro.TextMeshProUGUI pageNum;
     // Start is called before the first frame update
     List<Component> contentSection = new List<Component>();
     void Start()
@@ -22,6 +25,12 @@ public class DialogueContainer : MonoBehaviour
         }
         // making first item in list viewable
         contentSection[0].gameObject.SetActive(true);
+
+        // Render proper page number indicators at start
+        totalPages = contentSection.Count;
+        currPage = diagPointer + 1;
+        pageNum = gameObject.transform.Find("pageNum").GetComponent<RectTransform>().GetComponent<TMPro.TextMeshProUGUI>();
+        pageNum.text = $"{currPage}/{totalPages}";
     }
 
     // Update is called once per frame
@@ -38,6 +47,8 @@ public class DialogueContainer : MonoBehaviour
         } else {
             diagPointer++;
         }
+        currPage = diagPointer + 1; 
+        pageNum.text = $"{currPage}/{totalPages}";
         contentSection[diagPointer].gameObject.SetActive(true);
     }
 
@@ -50,6 +61,8 @@ public class DialogueContainer : MonoBehaviour
         } else {
             diagPointer--;
         }
+        currPage = diagPointer - 1; 
+        pageNum.text = $"{currPage}/{totalPages}";
         contentSection[diagPointer].gameObject.SetActive(true);
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CloseDialogue : MonoBehaviour
 {
-    public GameObject modalDialogue;
+    //public GameObject modalDialogue;
     public void close() {
-        modalDialogue.SetActive(false);
+        //modalDialogue.SetActive(false);
+        this.transform.parent.parent.gameObject.SetActive(false);
     }
 }

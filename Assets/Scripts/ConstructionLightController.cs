@@ -25,14 +25,16 @@ public class ConstructionLightController : MonoBehaviour
 
     private bool isPlaying = false;
 
-    private Vector3 neckOffRot;
-    private Vector3 lampOffRot;
+    private Vector3 neckStartRot;
+    private Vector3 lampStartRot;
+    // account for the containing models -90 rotation offset
+    private Vector3 rotOffset = new Vector3(-90, 0, 0);
 
     // Start is called before the first frame update
     void Start()
     {
-        //neckOffRot = lightNeck.transform.localRotation.eulerAngles;
-        //lampOffRot = lightLamp.transform.localRotation.eulerAngles;
+        neckStartRot = lightNeck.transform.localRotation.eulerAngles + rotOffset;
+        lampStartRot = lightLamp.transform.localRotation.eulerAngles + rotOffset;
 
         if (playOnStart)
         {
@@ -49,8 +51,24 @@ public class ConstructionLightController : MonoBehaviour
     {
         if (isPlaying)
         {
-            // Look at something... camera, dialog etc.
+            // We only want to rotate the Y axis for the light's "neck" object, and account for the light x rotation offset
+            var lightNeckLookRot = Quaternion.Euler(rotOffset.x, getLookRot(lightNeck).eulerAngles.y, 0);
+            lightNeck.transform.rotation = getSlerpToRot(lightNeck, lightNeckLookRot);
+
+            // We only want to rotate the X axis for the light's "lamp" object, taking into account the light's neck rotation and x rotation offset
+            var lampLookRot = Quaternion.Euler(getLookRot(lightLamp).eulerAngles.x + rotOffset.x, lightNeck.transform.rotation.eulerAngles.y, 0);
+            lightLamp.transform.rotation = getSlerpToRot(lightLamp, lampLookRot);
         }
+    }
+
+    Quaternion getLookRot(GameObject obj)
+    {
+        return Quaternion.LookRotation(arCamera.transform.position - obj.transform.position);
+    }
+
+    Quaternion getSlerpToRot(GameObject obj, Quaternion lookRot)
+    {
+        return Quaternion.Slerp(obj.transform.rotation, lookRot, delay * Time.deltaTime);
     }
 
     public void play()
@@ -64,8 +82,10 @@ public class ConstructionLightController : MonoBehaviour
         isPlaying = false;
 
         lightFlair.SetActive(isPlaying);
-        //lightNeck.transform.DORotate(neckOffRot, 1.0f);
-        //lightLamp.transform.DORotate(lampOffRot, 1.0f);
+
+
+        lightNeck.transform.DORotate(neckStartRot, 1.0f);
+        lightLamp.transform.DORotate(lampStartRot, 1.0f);
     }
 
     public void toggleAni()

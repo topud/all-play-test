@@ -3,7 +3,37 @@ guid: 772e93e3d2af5704fa9bfbef001ead09
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction-light_black
+    second: {fileID: 2100000, guid: 3443e8ccc58549f40a73206590cbbaa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction-light_body
+    second: {fileID: 2100000, guid: b6b3f62aa6a58a049b8849a89c841210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction-light_bulb
+    second: {fileID: 2100000, guid: 58f598f5dd1b7ac48a544d702e9f9f50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction-light_flair
+    second: {fileID: 2100000, guid: 5554e06aa326e8744a766bb78651de29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction-light_gray
+    second: {fileID: 2100000, guid: bdcd262701ced564f8cee10c163718f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: construction_grill
+    second: {fileID: 2100000, guid: a1c95c52f803c32498e2d7cc2d47059d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

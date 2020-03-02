@@ -3,7 +3,17 @@ guid: bc413278c2d60cf45a12cd1a3d917c30
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barricade
+    second: {fileID: 2100000, guid: 0c139bd4887384894957493b3f767eb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barricade_light-flair
+    second: {fileID: 2100000, guid: b87646fa7cc7f1b4d87d2b43fe680ade, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

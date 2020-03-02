@@ -435,7 +435,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2363574711049192901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15b4438c49b3894da89a283f6fe6da0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b7ae9637c020e14f9a5594796f04d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2835211948655718661
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2835211948655718661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd5ca89a7d2a5d4e8177d1565214492, type: 3}
+  m_Script: {fileID: 11500000, guid: dab406dcb0dae404c9c4bb8a67333612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 2363574711049192901}
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22b2991c8f573a648afb34f1bf4f3e35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc9309958ad0227449a31a148f842b03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5192295231207340674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b733a968511b05b4ba3fa86782925116, type: 3}
+  m_Script: {fileID: 11500000, guid: 09ee4809acb106945ba2e05acef3e75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 2363574711049192901}
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6081f379f82c7d469ef833412a44630, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91f810d5093c0fb448a4f449032d7a53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7286228670996964729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a595d20628eaca498a4766577685a75, type: 3}
+  m_Script: {fileID: 11500000, guid: fa8df7ee191d18447a736e76f326f382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8753486771002663762

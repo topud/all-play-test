@@ -62,7 +62,7 @@ PlayerSettings:
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
-  preserveFramebufferAlpha: 0
+  preserveFramebufferAlpha: 1
   disableDepthAndStencilBuffers: 0
   androidStartInFullscreen: 1
   androidRenderOutsideSafeArea: 1
@@ -183,7 +183,7 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 10.0
+  iOSTargetOSVersionString: 11.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 10.0
@@ -460,7 +460,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: Camera access required for target detection and tracking
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 
@@ -684,7 +684,7 @@ PlayerSettings:
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
     1: dUI_MANAGER;SUBSTANCE_PLUGIN_ENABLED;dUI_TextMeshPro
-    4: dUI_MANAGER;dUI_TextMeshPro
+    4: dUI_MANAGER;SUBSTANCE_PLUGIN_ENABLED;dUI_TextMeshPro
     7: dUI_MANAGER;SUBSTANCE_PLUGIN_ENABLED;dUI_TextMeshPro
     13: dUI_MANAGER;dUI_TextMeshPro
     14: dUI_MANAGER;dUI_TextMeshPro
@@ -777,10 +777,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: f7a00efe-e8ab-4ef4-b9f0-bd99ff235629
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: EY-AllPlay
+  organizationId: superflu12
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

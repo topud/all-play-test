@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,12 +14,17 @@ public class WebViewController : MonoBehaviour
 
 	public void Print()
 	{
+		if (webView)
+			Destroy(webView);
+
 		var webViewGameObject = new GameObject("UniWebView");
 		webView = webViewGameObject.AddComponent<UniWebView>();
+
 
 		webView.Frame = new Rect(Screen.width * 2, Screen.height * 2, Screen.width, Screen.height);
 		//webView.Frame = new Rect(0, 0, Screen.width, Screen.height);
 		string url = UniWebViewHelper.StreamingAssetURLForPath("html/printUSLetter.html");
+		//string url = "https://uniwebview.com";
 
 		webView.Load(url);
 		webView.Show();
@@ -29,30 +34,17 @@ public class WebViewController : MonoBehaviour
 			webView.OnMessageReceived += OnMessageReceived;
 			string jsCode = "setImages('" + frontImage + "','" + backImage + "');";
 			webView.EvaluateJavaScript(jsCode);
+			
 		};
+		
 	}
 
-	void OpenPrintDialog()
-	{
-		if (front_loaded && back_loaded)
-		{
-			webView.Print();
-			back_loaded = false;
-			front_loaded = false;
-		}
-	}
 
 	void OnMessageReceived(UniWebView view, UniWebViewMessage message)
 	{
-		if (message.Path == "front_loaded")
+		if (message.Path == "images_loaded")
 		{
-			front_loaded = true;
-			OpenPrintDialog();
-		}
-		if (message.Path == "back_loaded")
-		{
-			back_loaded = true;
-			OpenPrintDialog();
+			webView.Print();
 		}
 /*		if (message.Path == "close")
 		{

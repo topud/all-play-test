@@ -21,21 +21,40 @@
             window.open("uniwebview://close", "_self");
         }
 		
+		var backImgLoaded = false;
+		var frontImgLoaded = false;
+		
+		function imageLoaded() {
+			if (frontImgLoaded && backImgLoaded) {
+                
+                setTimeout( function () {
+                    window.open("uniwebview://images_loaded", "_self");
+                },300);
+				
+                backImgLoaded = false;
+				frontImgLoaded = false;
+			}
+		}
+		
 		function setImages(frontSrc, backSrc) {
 			var frontImg = document.getElementById('front');
 			var backImg = document.getElementById('back');
 			
 			frontImg.addEventListener('load', function() {
-				window.open("uniwebview://front_loaded", "_self");
-			});
-		
-			backImg.addEventListener('load', function () {
-				window.open("uniwebview://back_loaded", "_self")
+				frontImgLoaded = true;
+				imageLoaded();
 			});
 			
-			
-            frontImg.src = frontSrc;
+            
+            backImg.addEventListener('load', function () {
+                backImgLoaded = true;
+                imageLoaded();
+            });
+            
+				
 			backImg.src = backSrc;
+            frontImg.src = frontSrc;
+
 		}
 	</script>
 

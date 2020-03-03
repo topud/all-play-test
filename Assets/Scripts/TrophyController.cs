@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrophyController : MonoBehaviour
+public class TrophyController : MonoBehaviour, IModelAnimationController
 {
 
     [SerializeField]
@@ -13,7 +13,7 @@ public class TrophyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stop();
+        Stop();
     }
 
     // Update is called once per frame
@@ -22,29 +22,29 @@ public class TrophyController : MonoBehaviour
 
     }
 
-    public void play()
+    public void Play()
     {
         isPlaying = true;
         fireworks.Play();
 
     }
 
-    public void stop()
+    public void Stop()
     {
         isPlaying = false;
         fireworks.Stop();
 
     }
 
-    public void toggleAni()
+    public void ToggleAni()
     {
         if (isPlaying)
         {
-            stop();
+            Stop();
         }
         else
         {
-            play();
+            Play();
         }
 
     }

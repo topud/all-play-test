@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class ConstructionLightController : MonoBehaviour
+public class ConstructionLightController : MonoBehaviour, IModelAnimationController
 {
     [SerializeField]
     private GameObject arCamera;
@@ -38,10 +38,10 @@ public class ConstructionLightController : MonoBehaviour
 
         if (playOnStart)
         {
-            play();
+            Play();
         } else
 		{
-            stop();
+            Stop();
 		}
 
     }
@@ -61,23 +61,23 @@ public class ConstructionLightController : MonoBehaviour
         }
     }
 
-    Quaternion getLookRot(GameObject obj)
+    private Quaternion getLookRot(GameObject obj)
     {
         return Quaternion.LookRotation(arCamera.transform.position - obj.transform.position);
     }
 
-    Quaternion getSlerpToRot(GameObject obj, Quaternion lookRot)
+    private Quaternion getSlerpToRot(GameObject obj, Quaternion lookRot)
     {
         return Quaternion.Slerp(obj.transform.rotation, lookRot, delay * Time.deltaTime);
     }
 
-    public void play()
+    public void Play()
     {
         isPlaying = true;
         lightFlair.SetActive(isPlaying);
     }
 
-    public void stop()
+    public void Stop()
     {
         isPlaying = false;
 
@@ -88,15 +88,15 @@ public class ConstructionLightController : MonoBehaviour
         lightLamp.transform.DORotate(lampStartRot, 1.0f);
     }
 
-    public void toggleAni()
+    public void ToggleAni()
     {
         if (isPlaying)
         {
-            stop();
+            Stop();
         }
         else
         {
-            play();
+            Play();
         }
     }
 }

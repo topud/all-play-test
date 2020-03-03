@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ModelAnimatorController : MonoBehaviour
+public class ModelAnimatorController : MonoBehaviour, IModelAnimationController
 
 {
 
@@ -18,42 +18,36 @@ public class ModelAnimatorController : MonoBehaviour
     {
         if (playOnStart)
         {
-            play();
+            Play();
         }
         else
         {
-            stop();
+            Stop();
         }
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void play()
+    public void Play()
     {
         isPlaying = true;
         animator.SetBool("play", isPlaying);
     }
 
-    public void stop()
+    public void Stop()
     {
         isPlaying = false;
         animator.SetBool("play", isPlaying);
     }
 
-    public void toggleAni()
+    public void ToggleAni()
     {
         if (isPlaying)
         {
-            stop();
+            Stop();
         }
         else
         {
-            play();
+            Play();
         }
 
     }

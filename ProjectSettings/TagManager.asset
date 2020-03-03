@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogueText
   - DialoguePrefab
+  - ModelPrefab
   layers:
   - Default
   - TransparentFX

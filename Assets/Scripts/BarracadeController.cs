@@ -2,54 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarracadeController : MonoBehaviour
+public class BarracadeController : MonoBehaviour, IModelAnimationController
 {
 
     [SerializeField]
     private GameObject lightFlairs;
-
-    // More Animation TBD
-    //[SerializeField]
-    //private GameObject lightFlair01;
-
-    //[SerializeField]
-    //private GameObject lightFlair02;
-
 
     private bool isPlaying = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        stop();
+        Stop();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void play()
+    public void Play()
     {
         isPlaying = true;
         lightFlairs.SetActive(isPlaying);
     }
 
-    public void stop()
+    public void Stop()
     {
         isPlaying = false;
         lightFlairs.SetActive(isPlaying);
     }
 
-    public void toggleAni()
+    public void ToggleAni()
     {
         if(isPlaying)
         {
-            stop();
+            Stop();
         } else
         {
-            play();
+            Play();
         }
 
     }

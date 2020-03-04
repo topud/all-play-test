@@ -158,6 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48483bd330737145a17548947a8c2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frontImage: 1_portrait.png
+  backImage: 2_portrait.png
 --- !u!1 &6664435827505966772
 GameObject:
   m_ObjectHideFlags: 0
